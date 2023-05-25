@@ -35,7 +35,7 @@
           Ocean One empowers Pacific communities to reduce plastic waste<br>
           and protect the ocean through education and support
         </p>
-        <button type="button" id="btn">TAKE ACTION</button>
+        <button type="button" id="btn" onclick="alert('I am taking an action!')">TAKE ACTION</button>
     </div>
   </div>
 
@@ -53,6 +53,7 @@
                 </p>
             </div>
             <button type="button" class="section-2-btn">LEARN MORE</button>
+            <button type="button" id="editButton" onclick="edit()">Edit</button>
         </div>
         <div class="col-md-3">
             <div class="container-section-2">
@@ -183,10 +184,16 @@
       </div>
       <div class="col-md-6">
         <form action="@" method="none" enctype="text/plain">
-          <input type="text" size="25" placeholder="Name" required>
-          <input type="text" size="25" placeholder="Email" required>
-          <input class="text-area" type="textarea" rows="4" cols="50" placeholder="Write your message here" required><br>
-          <button id="sendButton" class="button" type="button">SEND</button>
+          <input id="name" type="text" size="25" placeholder="Name" required>
+          <input id="email" type="text" size="25" placeholder="Email" required>
+          <input id="message" class="text-area" type="textarea" rows="4" cols="50" placeholder="Write your message here" required><br>
+          <button id="showButton" class="button" type="button" onclick="show()">SEND</button>
+          <div id="hiddenElement">
+            <h5 id="thanks"></h5>
+            <p id="hello"></p>
+            <p id="contact"></p>
+            <p id="messages"></p>
+          </div>
         </form>
       </div>
     </div>
@@ -208,16 +215,7 @@
       </table>
     </div>
   </footer>
-  
-  <script>
-    var header = document.querySelector('header');
-    window.addEventListener('scroll', function() {
-      if (window.pageYOffset > 0) {
-          header.classList.add('header-bg', 'shadow');
-      } else {
-          header.classList.remove('header-bg', 'shadow');
-          }
-      })
-  </script>
+
+  <script src="assets/OceanOne.js"></script>
 </body>
 </html>
