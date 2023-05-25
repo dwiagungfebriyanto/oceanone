@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum Nomor 1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style_tugas2.css">
+</head>
+<body>
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <div class="container-fluid">
+            <div class="card text-center">
+                <div class="card-header text-start">
+                    <table>
+                        <tr>
+                            <td class="logo"><img src="assets/img/UGM.png"> </td>
+                            <td>
+                                <b>SEKOLAH VOKASI</b> <br>
+                                UNIVERSITAS GADJAH MADA
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="card-body" id="body">
+                    <div id="inner-body">
+                        <h5 class="card-title">Apakah Anda praktikan PPW1?</h5>
+                        <p class="card-text">SVPL214208 - Praktikum Pemrograman Web 1</p>
+                        <p class="lecturer">
+                            Pengajar:<br>
+                            Faza Maula Azif, S.Kom., M.Eng.<br>
+                            Dinar Nugroho Pratomo, S.Kom., M.IM., M.Cs.<br>
+                            Divi Galih Prasetyo Putri, S.Kom., M.Kom.
+                        </p>
+                        <a href="#" class="btn btn-primary btn-form" onclick="yes()">Ya</a>
+                        <a href="#" class="btn btn-primary btn-no" onclick="no()">Bukan</a>
+                    </div>
+                    <div id="form">
+                        <div class="input-group mb-3">
+                            <input id="nama" type="text" class="form-control" placeholder="Nama" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="nim" type="text" class="form-control" placeholder="NIM" aria-describedby="basic-addon1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input id="angkatan" type="text" class="form-control" placeholder="Angkatan" aria-describedby="basic-addon1">
+                        </div>
+                        <a href="#" class="btn btn-primary btn-form" onclick="data()">Masuk</a>
+                        <a href="#" class="btn btn-primary btn-no" onclick="window.location.reload()">Kembali</a>
+                    </div>
+                    <div id="table">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col" colspan="2">Data Praktikan</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-start">
+                                <tr>
+                                    <th scope="col">Nama</th>
+                                    <td id="name"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">NIM</th>
+                                    <td id="id"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Angkatan</th>
+                                    <td id="class"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="#" class="btn btn-primary btn-no" onclick="window.location.reload()">Keluar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js_tugas2.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum Nomor 3</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style_tugas3.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="text-center" id="title">
+            <h2>ITEMS YOU CONSUME DAILY</h2>
+            <h4>Please enter the quantity for <b>each day:</b></h4>
+        </div>
+        <table class="table table-borderless">
+            <tr>
+                <td></td>
+                <td><h5><b>DAY</b></h5></td>
+                <td><h5><b>YEAR</b></h5></td>
+            </tr>
+            <tr>
+                <td><b>Plastic Bottles</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Plastic Cups</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Straws</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Cotton Swabs</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Cigarette Butts</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Plastic Resealable Bags</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Plastic Cling Wrap</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Plastic Silverware</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Plastic Stirrers</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+            <tr>
+                <td><b>Food Container</b></td>
+                <td><input class="input" type="number" oninput="total()"></td>
+                <td class="output"></td>
+            </tr>
+        </table>
+        <div class="container-fluid text-center" id="bottom">
+            <div class="row">
+                <h5>Current Yearly Consumption</h5>
+            </div>
+            <div class="row" id="result"></div>
+        </div>
+    </div>
+    
+    <script src="assets/js_tugas3.js"></script>
+</body>
+</html>
