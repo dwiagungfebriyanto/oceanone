@@ -8,12 +8,15 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-header {
-    left: 0;
-    width: 100%;
-    position: fixed;
-    padding: 15px 50px;
+#header {
+    top: 0;
+    margin-top: 20px;
+    border-radius: 5px;
     z-index: 1;
+}
+
+#header-container {
+    padding: 0;
 }
 
 .header-bg {
@@ -95,7 +98,7 @@ header {
 }
 
 .col-text {
-    padding: 80px;
+    padding: 60px;
 }
 
 .row-1 {
@@ -177,6 +180,7 @@ table {
 input {
     margin: 15px;
     margin-left: 40px;
+    margin-right: 40px;
     border-color: #2541B2;
     width: 300px;
     height: 40px;
@@ -190,7 +194,7 @@ input {
     vertical-align: top;
 }
 
-#showButton {
+#sendButton {
     margin-top: 20px;
     margin-left: 40px;
     background-color: #2541B2;
@@ -206,6 +210,10 @@ input {
 }
 
 .button {
+    color: white;
+    background-color: #1768AC;
+    margin-top: 20px;
+    margin-left: 40px;
     width: 100px;
     height: fit-content;
     border: 0;
@@ -227,4 +235,47 @@ footer {
     color: black;
     text-decoration: none;
     padding-left: 20px;
+}
+
+
+/* Plactic waste calculator */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input {
+    width: 100px;
+    height: 30px;
+    padding-left: 8px;
+    margin: 0;
+    font-weight: bold;
+    border: 0;
+    border-radius: 7px;
+    background-color: #1769ac16;
+}
+
+.output {
+    font-weight: bold;
+}
+
+td h5 {
+    font-family: 'Playfair Display';
+    color: #1768AC;
+}
+
+#container {
+    margin-bottom: 50px;
+    width: fit-content;
+}
+
+#bottom {
+    border: solid 2px;
+    border-radius: 8px;
+    padding: 30px;
+    border-color: #03256c;
+}
+
+#result {
+    height: 30px;
 }

@@ -1,11 +1,13 @@
-var header = document.querySelector('header');
-window.addEventListener('scroll', function() {
-    if (window.pageYOffset > 0) {
+var headerClicked = 0;
+function headerbg() {
+    headerClicked ++;
+    var header = document.getElementById('header');
+    if (headerClicked % 2 != 0) {
         header.classList.add('header-bg', 'shadow');
     } else {
         header.classList.remove('header-bg', 'shadow');
-        }
-    });
+    }
+}
 
 function show() {
     var name = document.getElementById("name").value;
@@ -19,29 +21,32 @@ function show() {
     } else {
         alert("Please fill in all the required fields!");
     }
-};
+}
 
-var clicked = 0;
-function edit() {
-    clicked ++;
-    var editableElement = document.getElementById("editableElement");
-    var kickstartElement = document.getElementById("kickStart").textContent;
-    var editButton = document.getElementById("editButton");
-    
-    if (clicked === 1) {
-        editButton.innerHTML = "Save";
-        editableElement.textContent = kickstartElement;
-        editableElement.style.backgroundColor = "#f5f5f5";
-        editableElement.contentEditable = "true";
-        editableElement.focus();
-    } else if (clicked % 2 === 1) {
-        editButton.innerHTML = "Save";
-        editableElement.style.backgroundColor = "#f5f5f5";
-        editableElement.contentEditable = "true";
-        editableElement.focus();
-    } else {
-        editButton.innerHTML = "Edit";
-        editableElement.style.backgroundColor = "#ffffff";
-        editableElement.contentEditable = "false";
+// Calculator
+function total() {
+    var inputs = document.getElementsByClassName("input");
+    var outputs = document.getElementsByClassName("output");
+    var result = document.getElementById("result");
+    var total = 0;
+
+    for (var i=0; i < inputs.length; i++) {
+        var input = inputs[i].value;
+        var output = input * 365;
+        total += output;
+
+        if (!isNaN(output) && input != "") {
+            outputs[i].innerHTML = output;
+        } else {
+            outputs[i].innerHTML = "";
+        }
+
+        if (total != 0) {
+            result.innerHTML = `<h4><b>${total}</b></h4>`;
+        } else {
+            result.innerHTML = "";
+        }
+        
     }
-};
+    console.log(inputs);
+}
